@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 
-<mapper namespace="com.xk.dao.OrderDao">
+<mapper namespace="com.xxt.dao.OrderDao">
 
     <insert id="create" parameterType="OrderEntity" useGeneratedKeys="true" keyProperty="id">
         insert into t_order(id,name)  values(#{id},#{name});
     </insert>
 
-    <select id="findById" parameterType="Long" resultType="com.xk.entities.OrderEntity">
+    <select id="findById" parameterType="Long" resultType="com.xxt.entities.OrderEntity">
         select * from t_order where id=#{id};
     </select>
 

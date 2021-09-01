@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>cloud2021</artifactId>
-        <groupId>com.xk</groupId>
+        <groupId>com.xxt</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -18,7 +18,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.xk</groupId>
+            <groupId>com.xxt</groupId>
             <artifactId>common</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
@@ -86,7 +86,7 @@
                   <artifactId>spring-boot-maven-plugin</artifactId>
                   <configuration>
                       <!-- 指定该Main Class为全局的唯一入口 -->
-                      <mainClass>com.xk.ConsumerMain</mainClass>
+                      <mainClass>com.xxt.ConsumerMain</mainClass>
                   </configuration>
                   <executions>
                       <execution>

@@ -13,7 +13,7 @@ spring:
     password: zdan
 mybatis:
   mapper-locations: classpath:/mapper/*.xml
-  type-aliases-package: com.xk.entities
+  type-aliases-package: com.xxt.entities
 dubbo:
   application:
     name: ${spring.application.name}
