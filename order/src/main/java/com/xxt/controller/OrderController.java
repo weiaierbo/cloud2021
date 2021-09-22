@@ -29,4 +29,9 @@ public class OrderController {
     public CommonResult<OrderDTO> findById2(@PathVariable Long id){
         return CommonResult.buildSuccessData(orderService.findById(id));
     }
+
+    @RequestMapping("/photo/{id}")
+    public CommonResult<String> getPhoto(@PathVariable Long id) throws Exception {
+        return CommonResult.buildSuccessData(orderService.getPhoto(id));
+    }
 }

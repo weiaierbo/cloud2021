@@ -18,5 +18,5 @@ dubbo:
   application:
     name: ${spring.application.name}
   registry:
-    address: zookeeper://192.168.8.108:2181
+    address: zookeeper://192.168.22.7:5000
 # 'xx\nff'单引号会作为字符串输出,双引号会输出换行.单引号会转义，双引号不转义

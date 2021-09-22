@@ -9,4 +9,6 @@ import com.xxt.dto.OrderDTO;
 public interface OrderService {
 
     OrderDTO findById(Long id);
+
+    String getPhoto(Long id) throws Exception;
 }
