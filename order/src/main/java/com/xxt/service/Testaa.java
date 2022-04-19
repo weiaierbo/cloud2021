@@ -2,6 +2,7 @@ package com.xxt.service;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.xxt.entities.OrderEntity;
 
 import java.io.UnsupportedEncodingException;
 import java.nio.charset.StandardCharsets;
@@ -39,6 +40,18 @@ public class Testaa {
             }
         }*/
 
+        System.out.println(System.currentTimeMillis());
+        //com.xxt.entities.OrderEntity
+        System.out.println(OrderEntity.class.getName());
+        //OrderEntity
+        System.out.println(OrderEntity.class.getSimpleName());
+        //com.xxt.entities.OrderEntity
+        System.out.println(OrderEntity.class.getCanonicalName());
+        //com.xxt.entities.OrderEntity
+        System.out.println(OrderEntity.class.getTypeName());
+        if(1==1){
+            return;
+        }
         try{
             decodeBytes = org.apache.commons.codec.binary.Base64.decodeBase64(encodedPassword);
         }catch (Exception e){

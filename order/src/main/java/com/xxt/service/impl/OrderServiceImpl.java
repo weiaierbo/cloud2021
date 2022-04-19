@@ -70,4 +70,24 @@ public class OrderServiceImpl implements OrderService {
 
         return null;
     }
+
+    @Override
+    public String uploadPhoto(Long id) {
+        MinioClient minioClient =
+                MinioClient.builder()
+                        .endpoint("http://localhost:9000")
+                        .credentials("123456789", "987654321")
+                        .build();
+        try {
+            minioClient.putObject(PutObjectArgs.builder().build());
+            ObjectWriteResponse objectWriteResponse = minioClient.uploadObject(UploadObjectArgs.builder().bucket("").filename("")
+                    .object("").build());
+            if(objectWriteResponse != null){
+
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 }

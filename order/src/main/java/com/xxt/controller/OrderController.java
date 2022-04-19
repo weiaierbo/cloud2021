@@ -34,4 +34,8 @@ public class OrderController {
     public CommonResult<String> getPhoto(@PathVariable Long id) throws Exception {
         return CommonResult.buildSuccessData(orderService.getPhoto(id));
     }
+    @RequestMapping("/photo/add/{id}")
+    public CommonResult<String> uploadPhoto(@PathVariable Long id) throws Exception {
+        return CommonResult.buildSuccessData(orderService.uploadPhoto(id));
+    }
 }
